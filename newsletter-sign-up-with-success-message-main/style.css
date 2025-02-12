@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+}
+body {
+  background-color: hsl(234, 29%, 20%);
+}
+main {
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+  gap: 20px;
+}
+.container .text {
+  height: 100%;
+  margin-left: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.container .img img {
+  width: 300px;
+}
+.container .text h1 {
+  font-size: 39px;
+  margin-bottom: 20px;
+  color: hsl(235, 18%, 26%);
+}
+.container .text p{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.container .text uL {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 10px 0 ;
+}
+.container .text uL li{
+    display: flex;
+    align-items: center;
+    gap: 5px ;
+    font-size: 12px;
+}
+.container .text img{
+    width: 18px;
+}
+.container .text form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.container .text form .input{
+    display: flex;
+    flex-direction: column;
+}
+.container .text form .input label {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.container .text form .input input {
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid hsl(231, 7%, 60%);
+    border-radius: 5px;
+    outline: 0;
+}
+.container .text form button{
+    margin-top: 10px;
+    background-color: hsl(234, 29%, 20%);
+    height: 50px;
+    border: 0;
+    outline: 0;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.susces {
+    background-color: white;
+    display: flex;
+    justify-content: start;
+    padding: 10px 20px;
+    border-radius: 20px;
+    gap: 20px;
+    flex-direction: column;
+    
+
+    
+}
+.susces .img{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    text-align: left;
+}
+
+.susces .img img{
+    text-align: left;
+    width: 60px;
+}
+@media (max-width : 784px) {
+    main {
+       width: 100%;
+       
+      }
+    .container {
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        border-radius: 0;
+    }
+    .susces {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    
+}
